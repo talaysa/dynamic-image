@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dynamic Image & Link</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+
+    <style>
+        body, html{
+            font-family: 'Montserrat', sans-serif;
+        }
+        .container, .container *{
+            box-sizing:border-box;
+        }
+        .container{
+            width:100%;
+            max-width:980px;
+            margin:auto;
+        }
+        .row{
+            float:left;
+            width:100%;
+        }
+        h1 {
+            font-size:28px;
+            color:#45a2df;
+            text-align:center;
+        }
+        h2 {
+            margin:5px 0;
+            font-size:26px;
+            text-align:center;
+        }
+        hr {
+            height:1px;
+            width:100%;
+            background:#cccccc;
+            border:0;
+            margin-bottom:20px;
+            float:left;
+        }
+
+        p {
+            font-size:16px;
+        }
+        .jsonReview{
+            width:100%;
+            float:left;
+            margin-right:2%;
+            font-size:12px;
+            overflow:hidden;
+        }
+
+        .introduction p{
+            text-align:justify;
+        }
+
+        .jsonPre {
+            border-radius:5px;
+            max-height:300px;
+            background:#eeeff1;
+            overflow:auto;
+            margin:0 auto 20px 0;
+        }
+        .jsonReview pre{
+            padding:10px;
+            margin:auto;
+            display:block;
+            max-width:500px;
+            overflow:auto;
+            text-align:left;
+        }
+
+        .linkWrap{
+            text-align:center;
+            margin-bottom:10px;
+        }
+        .linkWrap a{
+            text-decoration:none;
+            color:#45a2df;
+        }
+
+        .resultReview strong{
+            display:block;
+            margin-top:20px;
+            text-align:center;
+            font-size:18px;
+            font-weight:normal;
+        }
+
+        .resultReview{
+            float:left;
+            width:100%;
+        }
+
+        .imageWrap a{
+            display:block;
+            width:100%;
+            text-align:center;
+            margin-top:10px;
+        }
+
+        .imageWrap{
+            margin-bottom:40px;
+        }
+
+        .imageWrap img{
+            width:100%;
+            max-width:700px;
+        }
+
+        .author {
+            display:block;
+            margin:30px auto 0 auto;
+            width:45px;
+            height:50px;
+            overflow:hidden;
+            text-indent:-200px;
+            background:url('http://www.salihtalay.com/images/salihtalay_logo.png');
+            background-size:39px;
+            background-position:right center;
+            background-repeat:no-repeat;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row introduction">
+            <h1>Dynamic Image & Link Structure</h1>
+            <p>
+                This little tool is generating image with JSON data. Again with the same json data, it is routing the fixed link structure depending on the condition. The main reason for doing this tool is to use dynamic data in problematic areas such as mail body.
+            </p>
+            <p>
+                You can convert the data you receive from the database into json, making it an email banner / dynamic signature as it is in this example.
+            </p>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="jsonReview">
+                <h2>JSON</h2>
+                <div class="row jsonPre">
+                    <pre>
+    [
+     {
+     "Sunday": [
+       {
+         "title": "Today Sunday! Here is campaigns form Sunday.",
+         "link": "https://www.google.com/sundayLink"
+       }
+     ],
+     "Monday": [
+       {
+         "title": "Today Monday! Here is campaigns form Monday.",
+         "link": "https://www.google.com/mondayLink"
+       }
+     ],
+     "Tuesday": [
+       {
+         "title": "Today Tuesday! Here is campaigns form Tuesday.",
+         "link": "https://www.google.com/tuesdayLink"
+       }
+     ],
+     "Wednesday": [
+       {
+         "title": "Today Wednesday! Here is campaigns form Wednesday.",
+         "link": "https://www.google.com/wednesdayLink"
+       }
+     ],
+     "Thursday": [
+       {
+         "title": "Today Thursday! Here is campaigns form Thursday.",
+         "link": "https://www.google.com/thursdayLink"
+       }
+     ],
+     "Friday": [
+       {
+         "title": "Today Friday! Here is campaigns form Friday.",
+         "link": "https://www.google.com/fridayLink"
+       }
+     ],
+     "Saturday": [
+       {
+         "title": "Today Saturday! Here is campaigns form Saturday.",
+         "link": "https://www.google.com/saturdayLink"
+       }
+     ]
+     }
+    ]
+                    </pre>
+                </div>
+            </div>
+            <div class="resultReview">
+                <h2>Result</h2>
+                <div class="row linkWrap">
+                    <strong>Link</strong>
+                    <a href="dynamicImage/link">It will redirect to related link</a>
+                </div>
+                <div class="row imageWrap">
+                    <strong>Dynamic Image</strong>
+                    <a href="dynamicImage/link"><img src="dynamicImage/image.jpg" alt="Dynamic Image"></a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <a href="http://www.salihtalay.com" class="author">Web Designer</a>
+    </div>
+
+</body>
+</html>

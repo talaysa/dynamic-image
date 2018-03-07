@@ -1,0 +1,11 @@
+Options +FollowSymLinks
+RewriteEngine On
+
+RewriteRule ^image.jpg          image.php [NC]
+RewriteRule ^link               link.php [NC]
+
+
+
+
+
+

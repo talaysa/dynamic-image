@@ -1,0 +1,46 @@
+[
+  {
+    "Sunday": [
+      {
+        "title": "Today is Sunday! Here is campaigns form Sunday.",
+        "link": "https://www.google.com/sundayLink"
+      }
+    ],
+    "Monday": [
+      {
+        "title": "Today is Monday! Here is campaigns form Monday.",
+        "link": "https://www.google.com/mondayLink"
+      }
+    ],
+    "Tuesday": [
+      {
+        "title": "Today is Tuesday! Here is campaigns form Tuesday.",
+        "link": "https://www.google.com/tuesdayLink"
+      }
+    ],
+    "Wednesday": [
+      {
+        "title": "Today is Wednesday! Here is campaigns form Wednesday.",
+        "link": "https://www.google.com/wednesdayLink"
+      }
+    ],
+    "Thursday": [
+      {
+        "title": "Today is Thursday! Here is campaigns form Thursday.",
+        "link": "https://www.google.com/thursdayLink"
+      }
+    ],
+    "Friday": [
+      {
+        "title": "Today is Friday! Here is campaigns form Friday.",
+        "link": "https://www.google.com/fridayLink"
+      }
+    ],
+    "Saturday": [
+      {
+        "title": "Today is Saturday! Here is campaigns form Saturday.",
+        "link": "https://www.google.com/saturdayLink"
+      }
+    ]
+  }
+]
