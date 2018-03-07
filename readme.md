@@ -5,4 +5,4 @@ This little tool is generating image with JSON data. Again with the same json da
 You can convert the data you receive from the database into json, making it an email banner / dynamic signature as it is in this example.
 
 You can check live sample from here,
-https://talaysa.github.io/Dynamic-Image
+https://talaysa.github.io/dynamic-image
