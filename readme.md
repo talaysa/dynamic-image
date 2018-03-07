@@ -1,4 +1,4 @@
-# dynamicImage
+# Dynamic Image & Link Structure with Same Url
 
 This little tool is generating image with JSON data. Again with the same json data, it is routing the fixed link structure depending on the condition. The main reason for doing this tool is to use dynamic data in problematic areas such as mail body.
 
